@@ -1,0 +1,25 @@
+<div class="parent">
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form [formGroup]="loginForm">
+                <div class="input-group">
+                    <input type="text" required formControlName="email">
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" required formControlName="password" >
+                    <label>Password</label>
+                </div>
+                <button (click)="login()" type="submit" class="login-btn">Login</button>
+                <b><a routerLink="/dashboard/home">continue without login</a></b>
+                <div class="bottom-links">
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">Sign Up</a><br>
+                    <a routerLink="/dashboard">go to dashboard</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
