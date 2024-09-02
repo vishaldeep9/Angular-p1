@@ -25,6 +25,7 @@ body {
     align-items: flex-start;
     border-right: 2px solid #ccc;
     overflow: auto;
+    height: 100vh;
 }
 
 .sidebar h1 {
@@ -76,4 +77,5 @@ body {
     
     overflow: auto;
     padding-bottom: 20px;
+    height: 100vh;
 }

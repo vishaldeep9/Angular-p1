@@ -1,98 +1,102 @@
-/* General Styles */
-body {
-    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Light to dark blue gradient */
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Form Container */
-form {
-    background: #ffffff;
-    padding: 16px; /* Equal padding */
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 450px;
-    border: 3px solid #0072ff; /* Dark blue border */
-    animation: fade-in 0.6s ease-out;
-    margin: 1px; /* Equal margin */
-    margin-left: 300px;
-   
-}
-
-/* Form Heading */
-h1 {
+/* Container for the user form */
+.user-form {
+    background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
+    padding: 30px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    background: linear-gradient(45deg, #f2ff00, #00c6ff); /* Dark to light blue gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+}
+
+/* Form title */
+.user-form h1 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
     font-size: 28px;
-    margin-bottom: 6px;
-    font-weight: 800;
 }
 
-/* Labels */
-label {
-    font-weight: 600;
-    color: #0072ff; /* Dark blue color */
+/* Labels styling */
+.user-form label {
     display: block;
-    margin-bottom: 3px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Inputs styling */
+.user-form input {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
     font-size: 14px;
-}
-
-/* Input Fields */
-input[type="text"] {
-    width: 93%;
-    padding: 12px; /* Equal padding */
-    margin-bottom: 2px;
-    border: 2px solid #00c6ff; /* Light blue border */
-    border-radius: 10px;
     outline: none;
-    background-color: #f0f8ff; /* Light blue background */
-    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
-    height: 4px;
+    transition: border-color 0.3s;
 }
 
-input[type="text"]:focus {
-    background-color: #e0f7ff; /* Slightly darker blue on focus */
-    border-color: #0072ff; /* Dark blue border on focus */
-    box-shadow: 0 0 8px rgba(0, 114, 255, 0.6); /* Dark blue shadow */
+/* Input focus effect */
+.user-form input:focus {
+    border-color: #6A5ACD;
+    box-shadow: 0 0 5px rgba(106, 90, 205, 0.5);
 }
 
-/* Form Button */
-button {
-    width: 100%;
-    padding: 12px 0; /* Equal padding */
-    background: linear-gradient(135deg, #0072ff, #00c6ff); /* Dark to light blue gradient */
+/* Radio buttons styling */
+.user-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Button styling */
+.user-form button {
+    background-color: #6A5ACD;
     color: #fff;
     border: none;
-    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: 700;
-    transition: background 0.3s, transform 0.3s;
     margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover {
-    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Reverse gradient on hover */
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+/* Button hover effect */
+.user-form button:hover {
+    background-color: #5a4bbf;
+    transform: scale(1.05);
 }
 
-/* Keyframes for Animation */
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+/* Dynamic fields for cards */
+.user-form h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.user-form .card-details {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.user-form .card-details label {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+/* Additional dynamic fields for conditional inputs */
+.user-form .additional-fields {
+    margin-top: 15px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    .user-form {
+        width: 90%;
+        padding: 20px;
     }
 }

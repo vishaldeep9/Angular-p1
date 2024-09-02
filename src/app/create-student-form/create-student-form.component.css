@@ -1,0 +1,140 @@
+body {
+    background-color: #ffe4e1; /* Light pink background for a lively feel */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.student-form {
+    width: 80%;
+    max-width: 400px; /* Reduced max-width for a more compact form */
+    margin: 20px auto; /* Reduced margin for smaller spacing */
+    background-color: #fff;
+    padding: 20px; /* Reduced padding for a smaller form */
+    border-radius: 8px; /* Slightly reduced border-radius */
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.2); /* Adjusted shadow */
+    border: 2px solid #ff69b4; /* Hot pink border */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.student-form h1 {
+    text-align: center;
+    color: #ff69b4; /* Hot pink heading */
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 24px; /* Smaller font size */
+}
+
+.student-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-form label {
+    font-size: 12px; /* Smaller font size */
+    margin-bottom: 4px; /* Reduced margin */
+    color: #333;
+    font-weight: 600;
+}
+
+.student-form input[type="text"],
+.student-form input[type="number"],
+.student-form input[type="email"],
+.student-form input[type="month"],
+.student-form input[type="radio"] {
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 12px; /* Reduced margin */
+    border: 2px solid #ff69b4; /* Hot pink border */
+    border-radius: 4px; /* Slightly reduced border-radius */
+    width: 100%;
+    font-size: 12px; /* Smaller font size */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-form input[type="text"]:focus,
+.student-form input[type="number"]:focus,
+.student-form input[type="email"]:focus,
+.student-form input[type="month"]:focus {
+    border-color: #ff1493; /* Deeper pink on focus */
+    box-shadow: 0 0 8px rgba(255, 20, 147, 0.5); /* Slightly reduced glow effect */
+    outline: none;
+}
+
+.student-form button {
+    padding: 10px; /* Reduced padding */
+    background-color: #32cd32; /* Lime green button */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Slightly reduced border-radius */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 8px; /* Reduced margin-top */
+}
+
+.student-form button:hover {
+    background-color: #228b22; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.student-form div[formGroupName="address"],
+.student-form div[formGroupName="fee"],
+.student-form div[formArrayName="marks"] {
+    border: 2px dashed #ffa07a; /* Light salmon dashed border */
+    padding: 12px; /* Reduced padding */
+    margin-bottom: 12px; /* Reduced margin */
+    border-radius: 4px; /* Slightly reduced border-radius */
+    background-color: #faf0e6; /* Light coral background */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.student-form .radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px; /* Reduced margin */
+}
+
+.student-form .radio-group label {
+    margin-right: 8px; /* Reduced margin-right */
+    color: #8a2be2; /* Blue violet for radio labels */
+}
+
+.student-form .radio-group input[type="radio"] {
+    margin-right: 4px; /* Reduced margin-right */
+}
+
+.student-form .add-marks-button,
+.student-form .delete-marks-button {
+    background-color: #ff4500; /* Orange-red for action buttons */
+    color: #fff;
+    border: none;
+    border-radius: 4px; /* Slightly reduced border-radius */
+    padding: 8px 12px; /* Reduced padding */
+    font-size: 12px; /* Smaller font size */
+    cursor: pointer;
+    margin-top: 8px; /* Reduced margin-top */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.student-form .delete-marks-button {
+    background-color: #db7093; /* Pale violet red for delete buttons */
+}
+
+.student-form .add-marks-button:hover,
+.student-form .delete-marks-button:hover {
+    background-color: #ff6347; /* Tomato for button hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.marks-details {
+    border: 2px dashed #ffa07a; /* Light salmon dashed border */
+    padding: 12px; /* Reduced padding */
+    margin-bottom: 12px; /* Reduced margin */
+    border-radius: 4px; /* Slightly reduced border-radius */
+    background-color: #faf0e6; /* Light coral background */
+    overflow: hidden; /* Prevent inputs from overflowing outside */
+    max-width: 100%; /* Ensures the card form stays within the container */
+}
+.error{
+    color: red;
+    font-weight: 600;
+}

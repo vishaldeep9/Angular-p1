@@ -1,3 +1,4 @@
+import { CreateStudentFormComponent } from './create-student-form/create-student-form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -28,6 +29,7 @@ import { ReloadComponent } from './reload/reload.component';
 import { ViewVehiclesComponent } from './view-vehicles/view-vehicles.component';
 import { ViewBanksComponent } from './view-banks/view-banks.component';
 import { MaterialUiComponent } from './material-ui/material-ui.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -60,6 +62,8 @@ const routes: Routes = [
     {path:'view-bank/:id',component:ViewBanksComponent},
     {path:'edit-vehicle/:id',component:CreateVehiclesComponent},
     {path:'edit-bank-account/:id',component:CreateBankAccountComponent},
+    {path:'create-user',component:CreateUserComponent},
+    {path:'create-student-form',component:CreateStudentFormComponent}
 
   ]},
  

@@ -34,6 +34,8 @@ import { ViewVehiclesComponent } from './view-vehicles/view-vehicles.component';
 import { ViewBanksComponent } from './view-banks/view-banks.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateStudentFormComponent } from './create-student-form/create-student-form.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +67,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     ReloadComponent,
     ViewVehiclesComponent,
     ViewBanksComponent,
+    CreateUserComponent,
+    CreateStudentFormComponent,
  
   ],
   imports: [
