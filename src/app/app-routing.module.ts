@@ -30,6 +30,8 @@ import { ViewVehiclesComponent } from './view-vehicles/view-vehicles.component';
 import { ViewBanksComponent } from './view-banks/view-banks.component';
 import { MaterialUiComponent } from './material-ui/material-ui.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -63,7 +65,9 @@ const routes: Routes = [
     {path:'edit-vehicle/:id',component:CreateVehiclesComponent},
     {path:'edit-bank-account/:id',component:CreateBankAccountComponent},
     {path:'create-user',component:CreateUserComponent},
-    {path:'create-student-form',component:CreateStudentFormComponent}
+    {path:'create-student-form',component:CreateStudentFormComponent},
+    {path:'parent',component:ParentComponent},
+    // {path:'child',component:ChildComponent}
 
   ]},
  

@@ -1,0 +1,13 @@
+<input type="text" name="" id="" [(ngModel)]="text">
+
+<app-child [a]="text" (vEvent)="catch($event)"></app-child>
+
+<h1>b in parent: {{bp}}</h1>
+<app-rating></app-rating> <br>
+<!-- text area
+  -->
+<div class="middle">
+    <input type="number" placeholder="enter max char allowed" [(ngModel)]="maxValue"> <br>
+
+<app-text-area [max]="maxValue"></app-text-area>
+</div>

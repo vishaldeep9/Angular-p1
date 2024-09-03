@@ -1,0 +1,24 @@
+.textarea-container {
+    position: relative; /* Create a positioning context for the character counter */
+    display: inline-block; /* Adjust based on your layout needs */
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    padding-bottom: 30px; /* Add padding to avoid overlap with the character counter */
+    resize: none; /* Optional: Disable resizing */
+  }
+  
+  .char-count {
+    position: absolute;
+    bottom: 5px; /* Positioning from the bottom */
+    right: 10px; /* Positioning from the right */
+    font-size: 12px; /* Smaller font size */
+    background-color: rgba(255, 255, 255, 0.8); /* Slight background for contrast */
+    padding: 2px 5px; /* Padding for aesthetics */
+    border-radius: 4px; /* Rounded corners */
+    pointer-events: none; /* Ensure this element doesn't interfere with text area events */
+  }
+  

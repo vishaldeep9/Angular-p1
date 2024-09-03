@@ -42,7 +42,10 @@
             <td>{{i+1}}</td>
             <td>{{cart.pname}}</td>
             <td >{{cart.price}}</td>
-            <td>{{cart.rating}}</td>
+            <td>
+                <!-- {{cart.rating}} -->
+                <app-rating [rating]="cart.rating"></app-rating>
+            </td>
             <td>{{cart.isFreeDelivery}}</td>   
             <td>
                 <button (click)="delete(i)">delete</button>

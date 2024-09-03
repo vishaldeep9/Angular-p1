@@ -36,6 +36,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateStudentFormComponent } from './create-student-form/create-student-form.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextAreaComponent } from './text-area/text-area.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +73,10 @@ import { CreateStudentFormComponent } from './create-student-form/create-student
     ViewBanksComponent,
     CreateUserComponent,
     CreateStudentFormComponent,
+    ParentComponent,
+    ChildComponent,
+    RatingComponent,
+    TextAreaComponent,
  
   ],
   imports: [
