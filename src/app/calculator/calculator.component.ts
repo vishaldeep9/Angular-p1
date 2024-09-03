@@ -10,6 +10,7 @@ export class CalculatorComponent {
   public num1:number=0;
   public num2:number=0;
   public result:number=0;
+  public result2:number=0;
 
   sum(){
     this.result=this.num1+this.num2
@@ -22,5 +23,8 @@ export class CalculatorComponent {
   }
   div(){
     this.result=this.num1/this.num2
+  }
+  catch(value:number){
+    this.result2=value
   }
 }
