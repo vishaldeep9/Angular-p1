@@ -1,0 +1,89 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd; /* Pink background */
+  /* Light yellow to peach gradient */
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #999;
+}
+
+.text-area, .data {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex; /* Align label and input in a row */
+    align-items: center; /* Center items vertically */
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px; /* Space between label and input */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="datetime-local"] {
+    flex: 1; /* Allow input to take available space */
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-right: 10px; /* Margin between input and button */
+}
+
+.button-container {
+    display: flex; /* Arrange buttons in a row */
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px; /* Space above buttons */
+}
+
+button {
+    background-color: #2196f3; /* Blue background */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hover effect */
+}
+
+.create {
+    background-color: #4caf50; /* Green background for the create button */
+}
+
+.reset {
+    background-color: #f44336; /* Red background for the reset button */
+}
+
+button:hover {
+    transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #666; /* Box shadow on focus for accessibility */
+}

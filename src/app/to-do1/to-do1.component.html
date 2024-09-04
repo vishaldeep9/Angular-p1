@@ -1,0 +1,17 @@
+<div class="parent">
+    <h1>TO-DO LIST</h1>
+    <div class="text-area">
+        <label for="">Task:</label>
+        <textarea placeholder="enter your text" [(ngModel)]="text" name="" id="" cols="30" rows="6">
+        </textarea>
+    </div>
+    <div class="data">
+        <label for="">Time:</label>
+        <input placeholder="select your date-time" [(ngModel)]="date" type="datetime-local" name="" id="">
+        <button>submit</button>
+    </div>
+    <div class="button-container">
+        <button class="create" (click)="setData()">create</button>
+        <button class="reset" (click)="reset()">reset</button>
+    </div>
+</div>

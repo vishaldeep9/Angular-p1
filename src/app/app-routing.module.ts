@@ -32,6 +32,9 @@ import { MaterialUiComponent } from './material-ui/material-ui.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { CartComponent } from './cart/cart.component';
+import { ToDoComponent } from './to-do/to-do.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -67,7 +70,10 @@ const routes: Routes = [
     {path:'create-user',component:CreateUserComponent},
     {path:'create-student-form',component:CreateStudentFormComponent},
     {path:'parent',component:ParentComponent},
-    // {path:'child',component:ChildComponent}
+    // {path:'child',component:ChildComponent},
+    {path:'sibling',component:SiblingComponent},
+    {path:'cart',component:CartComponent},
+    {path:'to-do',component:ToDoComponent}
 
   ]},
  

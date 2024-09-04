@@ -41,6 +41,18 @@ import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
 import { TextAreaComponent } from './text-area/text-area.component';
 import { OperationsComponent } from './operations/operations.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { CartComponent } from './cart/cart.component';
+import { Cart1Component } from './cart1/cart1.component';
+import { Cart2Component } from './cart2/cart2.component';
+import { Cart3Component } from './cart3/cart3.component';
+import { Cart4Component } from './cart4/cart4.component';
+import { ToDoComponent } from './to-do/to-do.component';
+import { ToDo1Component } from './to-do1/to-do1.component';
+import { ToDo2Component } from './to-do2/to-do2.component';
+import { ToDo3Component } from './to-do3/to-do3.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +91,18 @@ import { OperationsComponent } from './operations/operations.component';
     RatingComponent,
     TextAreaComponent,
     OperationsComponent,
+    SiblingComponent,
+    Sibling1Component,
+    Sibling2Component,
+    CartComponent,
+    Cart1Component,
+    Cart2Component,
+    Cart3Component,
+    Cart4Component,
+    ToDoComponent,
+    ToDo1Component,
+    ToDo2Component,
+    ToDo3Component,
  
   ],
   imports: [

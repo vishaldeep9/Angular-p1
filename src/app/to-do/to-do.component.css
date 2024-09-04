@@ -1,0 +1,47 @@
+.parent {
+    display: flex; /* Display the children in a row */
+  /* Space out the children evenly */
+    align-items: center; /* Center the children vertically */
+    background: linear-gradient(to right, #e0f7fa, #e6ee9c); /* Background gradient */
+    /* padding: 2px; */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    gap: 1%;
+}
+
+.child1, .child2, .child3 {
+  /* Allow the child elements to grow equally */
+/* Margin for spacing between children */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Center-align content */
+    margin-bottom: 50px;
+}
+
+/* Individual styles for each child */
+.child1 {
+  width: 33%;
+  display: flex;
+    background: linear-gradient(to bottom right, #f3c95d, #10048f); 
+    color: white;
+    height: 70%;
+}
+
+.child2 {
+    background-color: #4fc3f7; /* Light Blue background */
+    color: white;
+    height: 70%;
+    width: 33%;
+    overflow: auto;
+}
+
+.child3 {
+    background-color: #aed581; /* Light Green background */
+    color: white;
+    height: 70%;
+    width: 33%;
+    overflow: auto;
+}

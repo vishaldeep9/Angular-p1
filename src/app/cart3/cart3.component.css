@@ -1,0 +1,17 @@
+p {
+    font-size: 16px; /* Font size for paragraph text */
+    color: #100603; /* Orange Red text color */
+    margin: 10px 0; /* Margin for spacing */
+    text-align: center; /* Center-align the text */
+    font-weight: bold; /* Bold text */
+}
+
+h1 {
+    font-size: 24px; /* Font size for heading */
+    color: #4b0082; /* Indigo text color */
+    margin-top: 20px; /* Top margin for spacing */
+    margin-bottom: 15px; /* Bottom margin for spacing */
+    text-align: center; /* Center-align the heading */
+    font-weight: bold; /* Bold text */
+    text-shadow: 1px 1px 2px #999; /* Light shadow for depth */
+}
