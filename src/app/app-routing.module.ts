@@ -35,6 +35,7 @@ import { ChildComponent } from './child/child.component';
 import { SiblingComponent } from './sibling/sibling.component';
 import { CartComponent } from './cart/cart.component';
 import { ToDoComponent } from './to-do/to-do.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -73,7 +74,8 @@ const routes: Routes = [
     // {path:'child',component:ChildComponent},
     {path:'sibling',component:SiblingComponent},
     {path:'cart',component:CartComponent},
-    {path:'to-do',component:ToDoComponent}
+    {path:'to-do',component:ToDoComponent},
+    {path:'about-company',component:AboutCompanyComponent}
 
   ]},
  
