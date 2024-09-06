@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { LoginComponent } from './login/login.component';
@@ -54,6 +52,9 @@ import { ToDo1Component } from './to-do1/to-do1.component';
 import { ToDo2Component } from './to-do2/to-do2.component';
 import { ToDo3Component } from './to-do3/to-do3.component';
 import { AboutUsModule } from './about-us/about-us.module';
+import { PaymentsModule } from './payments/payments.module';
+import { AppRoutingModule } from './app-routing.module';
+import { CapitalDirective } from './capital.directive';
 
 @NgModule({
   declarations: [
@@ -104,6 +105,7 @@ import { AboutUsModule } from './about-us/about-us.module';
     ToDo1Component,
     ToDo2Component,
     ToDo3Component,
+    CapitalDirective,
  
   ],
   imports: [
@@ -113,7 +115,8 @@ import { AboutUsModule } from './about-us/about-us.module';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    AboutUsModule
+    AboutUsModule,
+    PaymentsModule
 
   ],
   providers: [],

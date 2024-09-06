@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-company.component.css']
 })
 export class AboutCompanyComponent {
-
+constructor(){
+  console.log("this is about- company company ")
+}
 }

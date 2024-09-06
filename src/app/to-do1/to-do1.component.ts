@@ -10,7 +10,8 @@ export class ToDo1Component {
  public text:string="";
  public date:string="";
  
- constructor(private todoService:ToDoService){}
+ constructor(private todoService:ToDoService){
+ }
  ngOnInit(){
   this.todoService.getEditTask().subscribe((data)=>{
    if(data){
@@ -23,6 +24,8 @@ export class ToDo1Component {
  setData(){
   this.todoService.setTask({textData:this.text,dateData:this.date});
 //  this.reset();
+console.log(this.text);
+  console.log(this.date);
  }
  reset(){
   this.text="";

@@ -10,9 +10,7 @@ export class ToDoService {
   constructor() {}
 
   //for adding new object
-  private taskSubject: BehaviorSubject<
-    { textData: string; dateData: string }[]
-  > = new BehaviorSubject(this.tasks);
+  private taskSubject: BehaviorSubject<{ textData: string; dateData: string }[]> = new BehaviorSubject(this.tasks);
 
   setTask(task: { textData: string; dateData: string }) {
     this.tasks.push(task);
@@ -23,7 +21,7 @@ export class ToDoService {
   }
 
   //for edit button
-  private editSubject: BehaviorSubject<{ textData: string; dateData: string } | null> = new  BehaviorSubject<{ textData: string; dateData: string } | null>(null);
+  private editSubject: BehaviorSubject<{textData: string;dateData: string;} | null> = new BehaviorSubject<{ textData: string; dateData: string;} | null>(null);
 
   setEditTask(task: { textData: string; dateData: string }) {
     this.editSubject.next(task);

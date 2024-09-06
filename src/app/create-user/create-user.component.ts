@@ -44,6 +44,7 @@ delete(i:number){
 
 //Dynamic Forms	----------------(3)
   constructor() {
+    console.log('this is create user-component')
     this.userForm.get('type')?.valueChanges.subscribe((data) => {
       if (data === 'dayScholor') {
         this.userForm.addControl('busFee', new FormControl());

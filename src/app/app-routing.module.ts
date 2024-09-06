@@ -1,7 +1,7 @@
 import { CreateStudentFormComponent } from './create-student-form/create-student-form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
@@ -75,8 +75,12 @@ const routes: Routes = [
     {path:'sibling',component:SiblingComponent},
     {path:'cart',component:CartComponent},
     {path:'to-do',component:ToDoComponent},
-    {path:'about-company',component:AboutCompanyComponent}
-
+    {path:'about-company',component:AboutCompanyComponent},
+    // lazy loading 
+    {
+      path: 'payment',
+      loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
+    }
   ]},
  
   //wild card path
@@ -85,7 +89,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  // to download lazy loading component 
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

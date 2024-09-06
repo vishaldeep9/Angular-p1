@@ -22,6 +22,7 @@ export class ToDo2Component {
     this.todoService.setIsVisible(true);
   }
   delete(index:number){
+    
     this.todoData.splice(index, 1);
   }
   edit(index:number){

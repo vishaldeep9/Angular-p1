@@ -48,7 +48,7 @@ export class VehiclesComponent {
         alert('internal server error');
       },
       complete: () => {
-        console.log('data has been fetched succesfully');
+        console.log('data has been fetched successfully');
       },
     });
   }
