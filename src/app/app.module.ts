@@ -55,6 +55,7 @@ import { AboutUsModule } from './about-us/about-us.module';
 import { PaymentsModule } from './payments/payments.module';
 import { AppRoutingModule } from './app-routing.module';
 import { CapitalDirective } from './capital.directive';
+import { PricePipe } from './price.pipe';
 
 @NgModule({
   declarations: [
@@ -106,6 +107,7 @@ import { CapitalDirective } from './capital.directive';
     ToDo2Component,
     ToDo3Component,
     CapitalDirective,
+    PricePipe,
  
   ],
   imports: [

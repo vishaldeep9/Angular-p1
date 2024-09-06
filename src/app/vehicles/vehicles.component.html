@@ -45,7 +45,7 @@
             <td>
                 <img [src]="veh.image" alt="{{veh.model}}" width="100">
             </td>
-            <td>{{veh.cost}}</td>
+            <td>{{veh.cost | price}}</td>
             <td>{{veh.id}}</td>
             <td>
                 <button (click)="view(veh.id)">View</button>

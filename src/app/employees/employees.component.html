@@ -22,7 +22,7 @@
                 <!-- {{emp.experience}} -->
              <app-rating [rating]="emp.experience"></app-rating>
             </td>
-            <td>{{emp.package}}</td>
+            <td>{{emp.package | price}}</td>
             <td>{{emp.role}}</td>   
             <td>
                 <button (click)="delete(i)">delete</button>
