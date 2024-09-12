@@ -6,12 +6,14 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class VehiclesService {
-  constructor(private httpClient: HttpClient) {}
+      
+ constructor(private httpClient: HttpClient) {}
   getVehicles(): Observable<any> {
     return this.httpClient.get(
-      'https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction'
+      '/assets/vehicles.json'
     );
   }
+  // https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction
   getVehicleBy(id:string): Observable<any> {
     return this.httpClient.get(
       `https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction/${id}`
