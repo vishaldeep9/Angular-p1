@@ -29,7 +29,7 @@
              </div>
         <br>
     </div>
-    <!-- for type-------------------------------- -->
+    <!-- for type-----------------------form Control--------- -->
      <label for="">Type:</label>
      <label for="">Day Scholar</label>
      <input type="radio" name="" id="" formControlName="type" value="dayScholor"><br>
@@ -46,7 +46,7 @@
         <input type="text" formControlName="hostelFee">
        </div>
     <br> <br>
-<!--Add marks------------------------------------------ -->
+<!--Add marks--------------------------------form Array---------- -->
 <button (click)="addMarks()">Add Marks</button>
 <div class="marks-details" formArrayName="marks">
     <div *ngFor="let mark of marksFormArray.controls;let i = index">

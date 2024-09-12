@@ -19,13 +19,15 @@ export class CreateStudentFormComponent {
       state: new FormControl(),
       pincode: new FormControl('',[Validators.required,Validators.min(100000),Validators.max(999999)])
     }),
-    type: new FormControl(),
+    marks: new FormArray([]), //blank array---for form array
+    type: new FormControl(),//----------------for form control
     // busFee:new FormControl(),
     // hostelFee:new FormControl()
-    marks: new FormArray([]), //blank array
   });
   constructor() {
-    //after selecting radio button ,show busFee & schoolFee input field respectively, before selecting any radio don't show any of these input field
+    //--------for form control-------------------
+    //after selecting radio button ,show busFee & schoolFee input field 
+    //respectively, before selecting any radio don't show any of these input field
     this.studentForm.get('type')?.valueChanges.subscribe((val) => {
       if (val == 'dayScholor') {
         this.studentForm.addControl('busFee', new FormControl());
@@ -37,6 +39,7 @@ export class CreateStudentFormComponent {
     });
   }
 
+   //--------for form Array-------------------
   get marksFormArray() {
     return this.studentForm.get('marks') as FormArray;
   }
@@ -49,9 +52,11 @@ export class CreateStudentFormComponent {
       })
     );
   }
+  // ---------------------------------------------
   delete(i: number) {
     this.marksFormArray.removeAt(i);
   }
+
   submit() {
     console.log(this.studentForm);
   }
