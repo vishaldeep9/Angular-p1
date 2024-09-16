@@ -1,0 +1,49 @@
+[
+      {
+         "Vehicle": "Nissan Taurus",
+         "manufacturer": "wolkswagen",
+         "model": "2020",
+         "type": "mini-suv",
+         "fuel": "diesel",
+         "color": "red",
+         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMZ57a0wCAc8o6OxaE9qp1m3NSccjhQFiP7A&s",
+         "cost": "1500000",
+         "id": "30",
+         "Vechile": "polo"
+       },
+       {
+         "Vehicle": "Aston Martin Sentra",
+         "manufacturer": "srikant",
+         "model": "2000",
+         "type": "good",
+         "fuel": "water",
+         "color": "brown munde",
+         "image": "https://cdn.motor1.com/images/mgl/AkmZ3y/s1/2024-nissan-sentra-sr-front-3-4.jpg",
+         "cost": "infinity",
+         "id": "31",
+         "Vechile": "naveen"
+       },
+       {
+         "Vehicle": "Rickshaw",
+         "manufacturer": "Atlas",
+         "model": "1950",
+         "type": "luxury",
+         "fuel": "Human blood",
+         "color": "red",
+         "image": "https://www.team-bhp.com/forum/attachments/commercial-vehicles/1334177d1422526927-e-rickshaw-heralding-silent-revolution-cycle.jpg",
+         "cost": "100000",
+         "id": "38"
+       },
+       {
+         "Vehicle": "Honda CBZ",
+         "manufacturer": "Honda",
+         "model": "2024",
+         "type": "Bike",
+         "fuel": "hybrid",
+         "color": "red",
+         "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2016-07/11/full/1468231728-2339.jpg?im=FeatureCrop,size=(826,465)",
+         "cost": "58000",
+         "id": "39"
+       }
+    ]
+ 
